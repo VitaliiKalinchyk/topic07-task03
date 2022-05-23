@@ -1,6 +1,6 @@
 # JDBC update/delete
  
-The purpose of this exercise is to train you to work with JDBC API.
+The purpose of this exercise is to train you to work with JDBC API.  
 Estimated workload is *40 min*.
 
 ## Description
