@@ -12,41 +12,27 @@ Please, proceed to `Demo` class and analyze its content. It demonstrates the fun
 Proceed to `User` class and implement its methods:
 
 * `String getLogin()` returns the user's login;
-
 * `String toString()` returns the users's login;
-
 * `boolean equals(Object)` works as follow: two User objects are equaled if and only if they both have the same login.
-
 * `static void createUser(String login)` creates a new `User` object by its *login* and *id* = 0.
 
 Proceed to `Team` class and implement its methods:
 
 * `String getName()` returns the team's name;
-
 * `String toString()` returns the team's name;
-
 * `boolean equals(Object)` works as follow: two Team objects are equaled if and only if they both have the same name;
-
 * `static void createTeam(String name)` creates a new `Team` object by its *name* and *id* = 0.
 
 Proceed to `DBManager` class and implement its methods:
 
 * `static DBManager getInstance()` returns the only one instance of this `singleton` class;
-
 * `insertUser(User)` inserts a `user` into the `users` table; this method should modify the id of a `user`, if a `user` has been inserted;
-
 * `List<User> findAllUsers` returns a list of all users;
-
 * `insertTeam(Team)` inserts a `team` into the `teams` table; this method should modify the id of a `team`, if a `team` has been inserted;
-
 * `List<Team> findAllTeams` returns a list of all teams;
-
 * `List<Teams> getUserTeams` returns a list of user's teams;
-
 * `updateTeam(Team team)` updates a team;
-
 * `deleteTeam(String name)` removes a team by its name; all the children records from the `users_teams` table must be all removed also (implement this functionality using cascade operation: *ON DELETE CASCADE*);
-
 * `void setTeamsForUser(User, Team...)` should be implemented using a transaction: as a result of calling this method, the user will be assigned either all groups or none. If the method is called like this:
     ```
     setTeamsForUser (user, teamA, teamB, teamC)
