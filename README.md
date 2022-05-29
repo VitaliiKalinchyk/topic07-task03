@@ -80,10 +80,10 @@ exclude that line from the code).
 
 * Use can use any relational database.  
 
-* The database contains three tables: 
-`users (id, login)`
-`teams (id, name)`
-`users_teams (user_id, team_id)`
+* The database contains three tables:   
+`users (id, login)`  
+`teams (id, name)`  
+`users_teams (user_id, team_id)`  
 
 * Initially, the database tables should have a some content (see a source code of the Demo class).
 
