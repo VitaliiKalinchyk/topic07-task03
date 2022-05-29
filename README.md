@@ -56,9 +56,7 @@ You must read a connection string from the properties file `app.properties` usin
 connection.url = jdbc:mysql://localhost:3306/mydb?user=user&password=pswrd
 ```
 
-> Do not load the driver class manually (referred to a call to 
-`Class.forName (JDBC-DRIVER-FQN)`
-exclude that line from the code).
+> Do not load the driver class manually (referred to a call to `Class.forName(JDBC-DRIVER-FQN)` exclude that line from the code).
 
 ***
 
