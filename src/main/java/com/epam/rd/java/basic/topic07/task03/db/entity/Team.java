@@ -3,21 +3,15 @@ package com.epam.rd.java.basic.topic07.task03.db.entity;
 public class Team {
 
 	private int id;
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
 	private String name;
 
 
-	private Team(int id, String name) {
-		this.id = id;
+	private Team(String name) {
 		this.name = name;
 	}
 
 	public static Team createTeam(String name) {
-		return new Team(0, name);
+		return new Team(name);
 	}
 
 	public int getId() {
@@ -30,6 +24,10 @@ public class Team {
 
 	public String getName() {
 		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	@Override
